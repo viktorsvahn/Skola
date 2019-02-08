@@ -1,0 +1,15 @@
+import numpy as np
+
+# Define coefficient matrix.
+A = np.array([[a11,a21,xa31], [a12,a22,a32], [a13,a23,a33]])
+
+# Define output vector.
+B = np.array([b11,b21,b31])
+
+# Solve for variable x.
+x = np.linalg.solve(A, B)
+
+# Check that solution is correct.
+np.allclose(np.dot(A, x), B)
+
+if np.allclose(np.dot(A, x), B) == True: print(x)
