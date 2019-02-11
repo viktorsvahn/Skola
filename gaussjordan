@@ -1,10 +1,10 @@
 import numpy as np
 
 # Define coefficient matrix.
-A = np.array([[a11,a21,xa31], [a12,a22,a32], [a13,a23,a33]])
+A = np.array([[a11,a12,xa13], [a21,a22,a23], [a31,a32,a33]])
 
 # Define output vector.
-B = np.array([b11,b21,b31])
+B = np.array([b11,b12,b13])
 
 # Solve for variable x.
 x = np.linalg.solve(A, B)
